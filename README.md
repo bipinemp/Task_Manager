@@ -37,12 +37,12 @@ backend - http://localhost:8000
 
 ## Env
 # backend : 
-- DATABASE_URL=postgres://postgres:gaindakot@localhost:5432/taskplatform
+- DATABASE_URL=postgres://postgres:pass@localhost:5432/db
 - PORT=8000
 - JWT_SECRET="#^*@*#(@#(@#jfdlfjdkf))"
-- POSTGRES_USER=postgres
-- POSTGRES_PASSWORD=gaindakot
-- POSTGRES_DB=taskplatform
+- POSTGRES_USER=user
+- POSTGRES_PASSWORD=pass
+- POSTGRES_DB=db
 
 # frontend :
 - VITE_API_URL=http://localhost:8000/api
