@@ -36,13 +36,13 @@ backend - http://localhost:8000
 - **prisma**: ORM used for backend to database iteraction.
 
 ## Env
-- backend : 
-DATABASE_URL=postgres://postgres:gaindakot@localhost:5432/taskplatform
-PORT=8000
-JWT_SECRET="#^*@*#(@#(@#jfdlfjdkf))"
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=gaindakot
-POSTGRES_DB=taskplatform
+# backend : 
+- DATABASE_URL=postgres://postgres:gaindakot@localhost:5432/taskplatform
+- PORT=8000
+- JWT_SECRET="#^*@*#(@#(@#jfdlfjdkf))"
+- POSTGRES_USER=postgres
+- POSTGRES_PASSWORD=gaindakot
+- POSTGRES_DB=taskplatform
 
-- frontend :
-VITE_API_URL=http://localhost:8000/api
+# frontend :
+- VITE_API_URL=http://localhost:8000/api
