@@ -13,7 +13,7 @@ cd Task_Manager
 ### 2. Run Docker compose command in terminal
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 ### 3. Migrate the database
