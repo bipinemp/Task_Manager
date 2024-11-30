@@ -1,25 +1,25 @@
-version: "2.24"
+version: "3.8"
 
 services:
   backend:
     build:
       context: ./backend
     ports:
-      - "8000:8000"
+      - 8000:8000
     depends_on:
       - db
     env_file:
       - ./backend/.env
     environment:
-      DATABASE_URL: "postgres://postgres:gaindakot@db:5432/taskplatform"
+      DATABASE_URL: postgres://postgres:gaindakot@localhost:5432/taskplatform?schema=public
       PORT: 8000
-      JWT_SECRET: "#^*@*#(@#(@#jfdlfjdkf))"
+      JWT_SECRET: #^*@*#(@#(@#jfdlfjdkf))
 
   frontend:
     build:
       context: ./frontend
     ports:
-      - "4173:4173"
+      - 4173:4173
     depends_on:
       - backend
     env_file:
@@ -33,4 +33,9 @@ services:
       POSTGRES_PASSWORD: gaindakot
       POSTGRES_DB: taskplatform
     ports:
-      - "5432:5432"
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
