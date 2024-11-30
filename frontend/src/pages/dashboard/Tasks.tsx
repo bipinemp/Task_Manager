@@ -1,25 +1,25 @@
-import TasksTable from "@/components/TasksTable";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import TasksTable from "../../components/TasksTable";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../../components/ui/select";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { useDebounce } from "@/hooks/useDebounce";
+} from "../../components/ui/dialog";
+import { useDebounce } from "../../hooks/useDebounce";
 
 import { PlusCircle } from "lucide-react";
 import { useState } from "react";
-import TaskForm from "@/components/TaskForm";
+import TaskForm from "../../components/TaskForm";
 
 const Tasks = () => {
   const [openDialog, setOpenDialog] = useState(false);

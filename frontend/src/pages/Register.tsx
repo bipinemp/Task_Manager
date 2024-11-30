@@ -1,16 +1,16 @@
-import { registerUser } from "@/apis/auth/auth";
-import { Button } from "@/components/ui/button";
+import { registerUser } from "../apis/auth/auth";
+import { Button } from "../components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { cn } from "@/lib/utils";
-import { registerSchema, TRegister } from "@/schemas/authSchema";
+} from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
+import { cn } from "../lib/utils";
+import { registerSchema, TRegister } from "../schemas/authSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";

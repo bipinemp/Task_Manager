@@ -1,4 +1,4 @@
-import { getTasksCount } from "@/apis/tasks/tasks";
+import { getTasksCount } from "../../apis/tasks/tasks";
 import { useQuery } from "@tanstack/react-query";
 import { Loader } from "lucide-react";
 

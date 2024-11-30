@@ -5,7 +5,6 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./pages/dashboard/Dashboard.tsx";
 import Tasks from "./pages/dashboard/Tasks.tsx";
-import Profile from "./pages/dashboard/Profile.tsx";
 import DashboardLayout from "./components/DashboardLayout.tsx";
 import Login from "./pages/Login.tsx";
 import Register from "./pages/Register.tsx";
@@ -42,7 +41,6 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Dashboard /> },
       { path: "/dashboard/tasks", element: <Tasks /> },
-      { path: "/dashboard/profile", element: <Profile /> },
     ],
   },
 ]);

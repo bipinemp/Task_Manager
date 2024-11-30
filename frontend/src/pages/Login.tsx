@@ -1,23 +1,23 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { loginSchema, TLogin } from "@/schemas/authSchema";
+} from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
+import { loginSchema, TLogin } from "../schemas/authSchema";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import { useMutation } from "@tanstack/react-query";
-import { loginUser } from "@/apis/auth/auth";
+import { loginUser } from "../apis/auth/auth";
 import toast from "react-hot-toast";
 import { Loader2 } from "lucide-react";
-import { useAuth } from "@/context/authContext";
+import { useAuth } from "../context/authContext";
 
 const Login = () => {
   const navigate = useNavigate();
