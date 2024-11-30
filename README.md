@@ -44,7 +44,7 @@ backend - http://localhost:8000
 
 ## Env
 # backend : 
-- DATABASE_URL=postgresql://postgres:pass@localhost:5432/db
+- DATABASE_URL=postgresql://postgres:pass@db:5432/db
 - PORT=8000
 - JWT_SECRET="#^*@*#(@#(@#jfdlfjdkf))"
 - POSTGRES_USER=user
