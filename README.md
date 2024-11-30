@@ -6,7 +6,7 @@ First, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/bipinemp/Task_Manager.git
-cd your-repo
+cd Task_Manager
 ```
 
 ### 2. Run Docker compose command in terminal
