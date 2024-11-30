@@ -1,3 +1,4 @@
+
 # Project Setup and Docker Instructions
 
 ### 1. Clone the Repository
@@ -15,7 +16,13 @@ cd Task_Manager
 docker-compose up --build
 ```
 
-### 3. Run Frontend and backend on browser
+### 3. Migrate the database
+
+```bash
+docker compose run backend npx prisma migrate dev --name init
+```
+
+### 4. Run Frontend and backend on browser
 
 ```bash
 frontend - http://localhost:4173
