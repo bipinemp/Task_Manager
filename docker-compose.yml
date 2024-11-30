@@ -10,10 +10,6 @@ services:
       - db
     env_file:
       - ./backend/.env
-    environment:
-      DATABASE_URL: postgresql://postgres:gaindakot@localhost:5432/taskplatform?schema=public
-      PORT: 8000
-      JWT_SECRET: #^*@*#(@#(@#jfdlfjdkf))
 
   frontend:
     build:
@@ -26,16 +22,17 @@ services:
       - ./frontend/.env
 
   db:
-    image: postgres:15.4
+    image: postgres:15-alpine
+    container_name: postgres-db
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: gaindakot
       POSTGRES_DB: taskplatform
     ports:
-      - 5432:5432
+      - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data
 
 volumes:
-  pgdata: {}
+  postgres-data:
