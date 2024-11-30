@@ -15,6 +15,13 @@ cd Task_Manager
 docker-compose up --build
 ```
 
+### 2. Run Frontend and backend
+
+```bash
+frontend - http://localhost:4173
+backend - http://localhost:8000
+```
+
 ## Features
 
 - **Add, delete, and update Tasks**: Users can create new tasks, delete and update them.
