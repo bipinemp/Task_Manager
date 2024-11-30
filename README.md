@@ -15,7 +15,7 @@ cd Task_Manager
 docker-compose up --build
 ```
 
-### 2. Run Frontend and backend
+### 3. Run Frontend and backend on browser
 
 ```bash
 frontend - http://localhost:4173
