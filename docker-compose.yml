@@ -11,7 +11,7 @@ services:
     env_file:
       - ./backend/.env
     environment:
-      DATABASE_URL: postgres://postgres:gaindakot@localhost:5432/taskplatform?schema=public
+      DATABASE_URL: postgresql://postgres:gaindakot@localhost:5432/taskplatform?schema=public
       PORT: 8000
       JWT_SECRET: #^*@*#(@#(@#jfdlfjdkf))
 
